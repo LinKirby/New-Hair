@@ -241,9 +241,14 @@ html {
 body {
   line-height: 1.7;
   color: rgb(18,86,136) !important;
-  font-weight: 300;
+  font-weight: 700;
   font-size: 1rem;
-  background-color: #000; }
+  background-color: #000;
+  font-family:'Alegreya', serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+.mb-5.lead{
+  font-weight: 400;
+}
 
 html {
   scroll-behavior: smooth; }
