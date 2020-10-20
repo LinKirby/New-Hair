@@ -290,13 +290,6 @@ jQuery(document).ready(function($) {
   };
   siteScroll();
 
-  // Stellar
-  $(window).stellar({
-  	horizontalScrolling: false,
-    responsive: true,
-  });
-
-
   var counter = function() {
 		
 		$('#about-section').waypoint( function( direction ) {
@@ -325,18 +318,3 @@ jQuery(document).ready(function($) {
 
 
 });
-//Scrolltop function
-// var mybutton = document.getElementById("myBtn");
-
-// window.onscroll = function() {scrollFunction()};
-
-// function scrollFunction() {
-// 	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-// 		mybutton.style.display = "block";}
-// 	else {
-// 		mybutton.style.display = "none";}
-//  }
-// function topFunction() {
-// 	document.body.scrollTop = 0;
-// 	document.documentElement.scrollTop = 0;
-//   } 
