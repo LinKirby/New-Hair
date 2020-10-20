@@ -188,6 +188,12 @@ html {
   }
 }
 
+@media only screen and (max-width: 560px) {
+  .topFunction{
+    display:none !important;
+  }
+}
+
 
 #myBtn {
   display: none;
