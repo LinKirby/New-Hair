@@ -4,7 +4,6 @@
  	once: false
  });
 
-
 jQuery(document).ready(function($) {
 
 	"use strict";
@@ -326,7 +325,6 @@ jQuery(document).ready(function($) {
 
 
 });
-
 //Scrolltop function
 var mybutton = document.getElementById("myBtn");
 
