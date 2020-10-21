@@ -25,7 +25,26 @@
   </head>
 
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-    
+    <button onclick="topHaut()" id="Btn" title="Go to top"><img src="images/up.png" alt="Monter haut de page" width="20" height="20"></button>
+    <script>
+
+      mybutton = document.getElementById("Btn");
+
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      function topHaut() {
+        document.body.scrollTop = 0; // Pour Safari
+        document.documentElement.scrollTop = 0; // Pour Chrome, Firefox, IE et Opera
+      }
+    </script>
     <div class="site-wrap" id="home-section">
 
       <div class="site-mobile-menu site-navbar-target">
