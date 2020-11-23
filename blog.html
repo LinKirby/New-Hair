@@ -2,11 +2,11 @@
 <html lang="fr">
 
   <head>
-    <title>Barberz &mdash; Website Template by Colorlib</title>
+    <title>New Hair</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
@@ -24,7 +24,26 @@
   </head>
 
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <button onclick="topHaut()" id="Btn" title="Go to top"><img src="images/up.png" alt="Monter haut de page" width="20" height="20"></button>
+    <script>
 
+      mybutton = document.getElementById("Btn");
+
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      function topHaut() {
+        document.body.scrollTop = 0; // Pour Safari
+        document.documentElement.scrollTop = 0; // Pour Chrome, Firefox, IE et Opera
+      }
+    </script>
     
     <div class="site-wrap" id="home-section">
 
@@ -59,12 +78,12 @@
 
               <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                  <li><a href="index.html" class="nav-link">Acceuil</a></li>
-                  <li><a href="services.html" class="nav-link">Services</a></li>
-                  <li><a href="barber-shop.html" class="nav-link">Tarif</a></li>
-                  <li><a href="about.html" class="nav-link">A propos</a></li>
-                  <li class="active"><a href="blog.html" class="nav-link">Galerie</a></li>
-                  <li><a href="contact.html" class="nav-link">Reservation</a></li>
+                  <li><a href="index.html" class="nav-link" title="page-acceuil">Acceuil</a></li>
+                  <li><a href="services.html" class="nav-link" title="page-service">Services</a></li>
+                  <li><a href="barber-shop.html" class="nav-link" title="page-tarif">Tarifs</a></li>
+                  <li><a href="about.html" class="nav-link" title="page-à-propos">A propos</a></li>
+                  <li class="active"><a href="blog.html" class="nav-link" title="oage-galerie">Galerie</a></li>
+                  <li><a href="contact.html" class="nav-link" title="page-reservation">Réservation</a></li>
                 </ul>
               </nav>
             </div>
@@ -94,6 +113,42 @@
           
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="post-entry-1 h-100">
+                <img src="images/coupe15.jpg" alt="Image"
+                 class="img-fluid">
+              
+              <div class="post-entry-1-contents">
+                <h2>Lo</h2>
+                <span class="meta d-inline-block mb-3"> <span class="mx-2">par</span>Nacer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="post-entry-1 h-100">
+                <img src="images/coupe16.jpg" alt="Image"
+                 class="img-fluid">
+              
+              <div class="post-entry-1-contents">
+                <h2>Loc</h2>
+                <span class="meta d-inline-block mb-3"> <span class="mx-2">par</span>Nacer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="post-entry-1 h-100">
+                <img src="images/coupe14.jpg" alt="Image"
+                 class="img-fluid">
+              
+              <div class="post-entry-1-contents">
+                <h2>Lorem</h2>
+                <span class="meta d-inline-block mb-3"> <span class="mx-2">par</span>Nacer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="post-entry-1 h-100">
                 <img src="images/coupe12.jpg" alt="Image"
                  class="img-fluid">
               
@@ -103,6 +158,7 @@
               </div>
             </div>
           </div>
+
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="post-entry-1 h-100">
                 <img src="images/coupe6.jpg" alt="Image"
@@ -283,23 +339,23 @@
               <div class="col-lg-6 ml-auto">
                 <h2 class="footer-heading mb-4">Liens Rapide</h2>
                 <ul class="list-unstyled">
-                  <li><a href="#">A propos de nous</a></li>
-                  <li><a href="#">Témoignages</a></li>
-                  <li><a href="#">Termes des Services</a></li>
-                  <li><a href="#">Politique de confidentialité</a></li>
-                  <li><a href="#">Nous Contacter</a></li>
+                  <li><a href="about.html">A propos de nous</a></li>
+                  <li><a href="https://www.google.com/search?hl=fr&sxsrf=ALeKk00EUVqhwZtf3iQPQ_dM9U0676dOCA:1602841604614&ei=_GuJX-GlCKORlwTqmquACg&q=new%20hair%20%20vitrolles&oq=new+hair++vitrolles&gs_lcp=CgZwc3ktYWIQAzIECCMQJzIECCMQJzIECCMQJzICCAAyBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjoECAAQRzoECAAQQzoICAAQFhAKEB46BwgjELACECc6BAgAEA06CAgAEA0QBRAeOggIABAIEA0QHlD5HljyNmDJN2gBcAJ4AIAB6wGIAdYLkgEFMC45LjGYAQCgAQGqAQdnd3Mtd2l6yAEIwAEB&sclient=psy-ab&ved=2ahUKEwjkl-Wj6rjsAhXixoUKHRMbBdIQvS4wBXoECAIQKg&uact=5&npsic=0&rflfq=1&rlha=0&rllag=43440538,5259747,2052&tbm=lcl&rldimm=639125122647568385&lqi=ChNuZXcgaGFpciAgdml0cm9sbGVzWh4KCG5ldyBoYWlyIhJuZXcgaGFpciB2aXRyb2xsZXM&rldoc=1&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2&rlst=f#lrd=0x12c9e9213b28f547:0x8dea0e9ae6fb001,1,,,&rlfi=hd:;si:639125122647568385,l,ChNuZXcgaGFpciAgdml0cm9sbGVzWh4KCG5ldyBoYWlyIhJuZXcgaGFpciB2aXRyb2xsZXM;mv:[[43.458782799999994,5.279335199999999],[43.4222949,5.2459619]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2" target="_blank">Témoignages</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="single.html">Politique de confidentialité</a></li>
+                  <li><a href="contact.html">Nous Contacter</a></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <h2 class="footer-heading mb-4">Réseaux</h2>
                 <a href="https://www.facebook.com/newhairvitrolles/" class="fa fa-facebook" target="_blank"><span style="font-size: 3em; color: rgb(72,103,170);"><i class="fab fa-facebook"></i></span></i></a>
-                <a href="#" class="fa fa-instagram" target="_blank"><span style="font-size: 3em; color: rgb(18,86,136);"><i class="fab fa-instagram"></i></span></a>
+                <a href="https://instagram.com/newhair_barber?igshid=15or0sqq5sqto" class="fa fa-instagram" target="_blank"><span style="font-size: 3em; color: rgb(18,86,136);"><i class="fab fa-instagram"></i></span></a>
                 <a href="#" class="fa fa-snapchat" target="_blank"><span style="font-size: 3em; color: rgb(247,244,1);"><i class="fab fa-snapchat"></i></span></a>
               </div>
 
-              <div class="col-lg-6 ml-auto">
+              <div class="col-lg-6 auto">
                 <h2 class="footer'heading mb-4">Maps</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.278248399916!2d5.270744515717627!3d43.42623597509501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8dea0e9ae6fb001!2sNew%20Hair%20Coiffeur!5e1!3m2!1sfr!2sfr!4v1602768092837!5m2!1sfr!2sfr" width="500" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.278248399916!2d5.270744515717627!3d43.42623597509501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8dea0e9ae6fb001!2sNew%20Hair%20Coiffeur!5e1!3m2!1sfr!2sfr!4v1602768092837!5m2!1sfr!2sfr" width="300" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
               </div>
               
             </div>
